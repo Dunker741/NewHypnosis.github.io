@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Janice Buenafe Hypnosis</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Charmonman|Mali|Titillium+Web" rel="stylesheet"> 
+</head>
+<body>
+  <div class="wrapper">
+   <header>
+      <div class="logo">
+        MENU
+      </div>
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="section1">
+    <div id="title">
+      <h1 class="heading"><span>Janice Buenafe Hypnosis</span></h1>
+    </div>
+    <div id="title2">
+      <h2 class="subheading"><span>Mind & Body Relaxation</span></h2>
+    </div>
+  </div>
+  <div class="section">
+  <div class="container">
+     <h1>Who We Are</h1>
+     <p class="description">
+       Brief introduction of history and experience.
+     </p>
+  </div>
+  </div>
+  <div class="section2">
+    <div class="container">
+      <p class="description">
+      Introduction of how we can help client/Testimonials?
+      </p>
+    </div>
+  </div>
+  <div class="section">
+  <div class="container">
+    <h1> Our Services</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="profile">
+        <img src="img/hypnosis.jpg" class="rounded-circle portrait">
+          <h5>Hypnosis</h5>
+          <p>Hypnotherapy.</p>
+        </div>
+      </div>
+      <br/>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="profile">
+        <img src="img/therapy.jpg" class="rounded-circle portrait">
+          <h5>Therapy</h5>
+          <p>Therapeutic practice.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="profile">
+          <img src="img/healing.jpg" class="rounded-circle portrait">
+          <h5>Healing</h5>
+          <p>Physical & emotional healing.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="profile">
+        <img src="img/relaxation.jpg" class="rounded-circle portrait">
+          <h5>Relaxation</h5>
+          <p>Relax & recharge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="section2">
+    <div class="container">
+    <p class="description">
+      The services we provide
+    </p>
+    </div>
+  </div>
+  <div class="section">
+  <div class="container">
+     <h1>Contact</h1>
+     <p class="description">
+       Links to email, facebook, twitter, social media, etc.
+     </p>
+  </div>
+  </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $('#title').hide().delay(500).fadeIn(1000);
+      $('#title2').hide().delay(1500).fadeIn(1000);
+    });
+ 
+    $(window).on("scroll", function(){
+      if($(window).scrollTop()){
+        $('nav').addClass('white');
+      } else {
+        $('nav').removeClass('white');
+      }
+    });
+    $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+        $('nav').css({'background': 'black'});
+    });
+     
+    $(window).scroll(function(){
+        parallax();    
+    });
+    function parallax() {
+      var wScroll = $(window).scrollTop();
+      
+      $('body').css('background-position', 'center '+(wScroll*0.75)+'px');
+    }
+    
+      
+  </script>
+</body>
+</html>
